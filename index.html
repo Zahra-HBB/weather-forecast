@@ -13,15 +13,23 @@
 
         <div class="container">
             <div class="row">
-                <div class="col-md-12">Please Input The City Name: <input type="text" ng-model="cityName" /> </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12"><button type="button" ng-click="reload()">Current Wearher</button>
+                <div class="col-md-8">
+                    <div class="input-group">
+                        <span class="input-group-addon" id="basic-addon1">Please Input The City Name:</span>
+                        <input type="text" class="form-control" placeholder="" ng-model="cityName" aria-describedby="basic-addon1">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <button type="button" class="btn btn-primary" ng-click="reload()">Current Wearher</button>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-12">Current Weather Is :
-                    <h1> {{weather}}</h1>
+                <div class="col-md-4">
+                    <h3><span class="label label-default">Current Weather Is :</span></h3>
+                </div>
+                <div class="col-md-8">                    
+                    <h3> {{weather}}</h3>
+                </div>
                 </div>
             </div>
 
